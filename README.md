@@ -1,4 +1,4 @@
-# kubernetes
+# Kubernetes
 Hands on K8s
 
 # POD PLACEMENT
@@ -26,3 +26,9 @@ containers - Main Container
    kubectl port-forward svc/myservice 8080:80
 
    Now from local machine , open URL http://127.0.0.1:8080/  which will show contents of link https://raw.githubusercontent.com/kubernetes/website/main/content/en/examples/application/nginx-app.yaml
+
+   ![image](https://github.com/user-attachments/assets/5cebbea6-cf06-4a7a-88a8-55702a30c306)
+
+   ![image](https://github.com/user-attachments/assets/41e8b5fc-583e-4f53-b3fd-4ba6b6612ba1)
+
+
