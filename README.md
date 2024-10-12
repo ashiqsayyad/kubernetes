@@ -22,6 +22,12 @@ containers - Main Container
    It will run nginx:latest image.Nginx displays the file index.html which is located at /usr/share/nginx/html/index.html which is updated by initContainers
 
    To run the service from your development machine, use port forward  using below command
+
+  kubectl port-forward svc/url-shortner-ask-url-shortner <local-machine-port where you want port to be forwarded>:<service-port where svc is running> -n ask-url-shortner
+
+  kubectl port-forward svc/url-shortner-ask-url-shortner 8089:8080 -n ask-url-shortner  
+
+  8080 is the port where my kubernetes svc is running and 8089 is the port where local port forwarding will happen http://localhost:8089/hello
    
    kubectl port-forward svc/myservice 8080:80
 
